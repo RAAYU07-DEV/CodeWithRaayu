@@ -120,7 +120,7 @@
 import os
 import streamlit as st
 import google
-from google import genai
+from google import genrativeai as genai
 
 # Function to query Gemini model
 def query(user_query):
@@ -167,4 +167,5 @@ if user_input:
     st.session_state.messages.append({"role": "assistant", "msg": ai_response})
     with st.chat_message("assistant"):
         st.markdown(ai_response)
+
 
