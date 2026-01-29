@@ -1,3 +1,4 @@
 streamlit
-google-genrativeai
+google-genai
+
 
