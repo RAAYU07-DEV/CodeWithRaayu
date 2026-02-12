@@ -137,7 +137,7 @@ def query(user_query):
     )
 
     # Convert into text format
-    return response.text
+    return responce.txt
 
 # Initialize session state
 if "messages" not in st.session_state:
@@ -149,7 +149,7 @@ for msg in st.session_state.messages:
         st.markdown(msg["msg"])
 
 # App title
-st.title("🧠 RAYYU-GEN 💻")
+st.title("🧠RAYYU-GEN 💻")
 
 # User input
 user_input = st.chat_input("Ask me anything...")
@@ -167,5 +167,6 @@ if user_input:
     st.session_state.messages.append({"role": "assistant", "msg": ai_response})
     with st.chat_message("assistant"):
         st.markdown(ai_response)
+
 
 
